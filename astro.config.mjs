@@ -39,6 +39,7 @@ export default defineConfig({
 			name: "JetBrains Mono",
 			cssVariable: "--font-jetbrains-mono",
 			provider: fontProviders.fontsource(),
+			styles: ["normal", "italic"],
 		},
 		{
 			name: "ZenMaruGothic-Medium",
