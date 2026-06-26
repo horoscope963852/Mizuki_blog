@@ -67,21 +67,7 @@ export interface SiteConfig {
 		targetWidth?: number; // 目标宽度，低于此宽度时开始缩放
 	};
 
-	// 添加字体配置
-	font: {
-		asciiFont: {
-			fontFamily: string;
-			fontWeight: string | number;
-			localFonts: string[];
-			enableCompress: boolean;
-		};
-		cjkFont: {
-			fontFamily: string;
-			fontWeight: string | number;
-			localFonts: string[];
-			enableCompress: boolean;
-		};
-	};
+	// 字体现在通过 astro.config.mjs 的 fonts 选项配置（Astro Font API）
 
 	// 添加bangumi配置
 	bangumi?: {
