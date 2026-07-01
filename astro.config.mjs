@@ -19,6 +19,7 @@ import remarkDirective from "remark-directive";
 import remarkMath from "remark-math";
 import remarkSectionize from "remark-sectionize";
 
+import { buildIconInclude } from "./src/plugins/astro-icon-include.mjs";
 import { siteConfig } from "./src/config/index.ts";
 import { pluginCustomCopyButton } from "./src/plugins/expressive-code/custom-copy-button.js";
 import { pluginLanguageBadge } from "./src/plugins/expressive-code/language-badge.ts";
@@ -117,7 +118,9 @@ export default defineConfig({
 				);
 			},
 		}),
-		icon(),
+		icon({
+			include: buildIconInclude(),
+		}),
 		expressiveCode({
 			themes: ["github-light", "github-dark"],
 			plugins: [
