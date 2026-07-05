@@ -1,0 +1,52 @@
+2026-07-05T16:59:32.623906Z  INFO tailwindcss_oxide::scanner: Provided sources:
+2026-07-05T16:59:32.623984Z  INFO tailwindcss_oxide::scanner: Source: PublicSourceEntry { base: "E:/Mizuki_blog", pattern: "**/*", negated: false }
+2026-07-05T16:59:32.624826Z  INFO tailwindcss_oxide::scanner: Optimized sources:
+2026-07-05T16:59:32.624843Z  INFO tailwindcss_oxide::scanner: Source: Auto { base: "E:\\Mizuki_blog" }
+2026-07-05T16:59:32.628093Z  INFO tailwindcss_oxide::scanner: Provided sources:
+2026-07-05T16:59:32.628110Z  INFO tailwindcss_oxide::scanner: Source: PublicSourceEntry { base: "E:/Mizuki_blog", pattern: "**/*", negated: false }
+2026-07-05T16:59:32.629667Z  INFO tailwindcss_oxide::scanner: Optimized sources:
+2026-07-05T16:59:32.629691Z  INFO tailwindcss_oxide::scanner: Source: Auto { base: "E:\\Mizuki_blog" }
+2026-07-05T16:59:32.720320Z  INFO tailwindcss_oxide::scanner: Provided sources:
+2026-07-05T16:59:32.720331Z  INFO tailwindcss_oxide::scanner: Source: PublicSourceEntry { base: "E:/Mizuki_blog", pattern: "**/*", negated: false }
+2026-07-05T16:59:32.720883Z  INFO tailwindcss_oxide::scanner: Optimized sources:
+2026-07-05T16:59:32.720890Z  INFO tailwindcss_oxide::scanner: Source: Auto { base: "E:\\Mizuki_blog" }
+2026-07-05T16:59:32.722705Z  INFO tailwindcss_oxide::scanner: Provided sources:
+2026-07-05T16:59:32.722710Z  INFO tailwindcss_oxide::scanner: Source: PublicSourceEntry { base: "E:/Mizuki_blog", pattern: "**/*", negated: false }
+2026-07-05T16:59:32.723185Z  INFO tailwindcss_oxide::scanner: Optimized sources:
+2026-07-05T16:59:32.723193Z  INFO tailwindcss_oxide::scanner: Source: Auto { base: "E:\\Mizuki_blog" }
+2026-07-05T16:59:32.724434Z  INFO tailwindcss_oxide::scanner: Provided sources:
+2026-07-05T16:59:32.724440Z  INFO tailwindcss_oxide::scanner: Source: PublicSourceEntry { base: "E:/Mizuki_blog", pattern: "**/*", negated: false }
+2026-07-05T16:59:32.724894Z  INFO tailwindcss_oxide::scanner: Optimized sources:
+2026-07-05T16:59:32.724902Z  INFO tailwindcss_oxide::scanner: Source: Auto { base: "E:\\Mizuki_blog" }
+2026-07-05T16:59:32.725894Z  INFO tailwindcss_oxide::scanner: Provided sources:
+2026-07-05T16:59:32.725899Z  INFO tailwindcss_oxide::scanner: Source: PublicSourceEntry { base: "E:/Mizuki_blog", pattern: "**/*", negated: false }
+2026-07-05T16:59:32.726342Z  INFO tailwindcss_oxide::scanner: Optimized sources:
+2026-07-05T16:59:32.726348Z  INFO tailwindcss_oxide::scanner: Source: Auto { base: "E:\\Mizuki_blog" }
+2026-07-05T16:59:32.735639Z  INFO tailwindcss_oxide::scanner: Provided sources:
+2026-07-05T16:59:32.735650Z  INFO tailwindcss_oxide::scanner: Source: PublicSourceEntry { base: "E:/Mizuki_blog", pattern: "**/*", negated: false }
+2026-07-05T16:59:32.736193Z  INFO tailwindcss_oxide::scanner: Optimized sources:
+2026-07-05T16:59:32.736200Z  INFO tailwindcss_oxide::scanner: Source: Auto { base: "E:\\Mizuki_blog" }
+2026-07-05T16:59:32.784708Z  INFO tailwindcss_oxide::scanner: Provided sources:
+2026-07-05T16:59:32.784719Z  INFO tailwindcss_oxide::scanner: Source: PublicSourceEntry { base: "E:/Mizuki_blog", pattern: "**/*", negated: false }
+2026-07-05T16:59:32.785263Z  INFO tailwindcss_oxide::scanner: Optimized sources:
+2026-07-05T16:59:32.785271Z  INFO tailwindcss_oxide::scanner: Source: Auto { base: "E:\\Mizuki_blog" }
+2026-07-05T16:59:32.786385Z  INFO tailwindcss_oxide::scanner: Provided sources:
+2026-07-05T16:59:32.786390Z  INFO tailwindcss_oxide::scanner: Source: PublicSourceEntry { base: "E:/Mizuki_blog", pattern: "**/*", negated: false }
+2026-07-05T16:59:32.786849Z  INFO tailwindcss_oxide::scanner: Optimized sources:
+2026-07-05T16:59:32.786857Z  INFO tailwindcss_oxide::scanner: Source: Auto { base: "E:\\Mizuki_blog" }
+2026-07-05T16:59:32.787963Z  INFO tailwindcss_oxide::scanner: Provided sources:
+2026-07-05T16:59:32.787968Z  INFO tailwindcss_oxide::scanner: Source: PublicSourceEntry { base: "E:/Mizuki_blog", pattern: "**/*", negated: false }
+2026-07-05T16:59:32.788391Z  INFO tailwindcss_oxide::scanner: Optimized sources:
+2026-07-05T16:59:32.788399Z  INFO tailwindcss_oxide::scanner: Source: Auto { base: "E:\\Mizuki_blog" }
+2026-07-05T16:59:32.789414Z  INFO tailwindcss_oxide::scanner: Provided sources:
+2026-07-05T16:59:32.789421Z  INFO tailwindcss_oxide::scanner: Source: PublicSourceEntry { base: "E:/Mizuki_blog", pattern: "**/*", negated: false }
+2026-07-05T16:59:32.789888Z  INFO tailwindcss_oxide::scanner: Optimized sources:
+2026-07-05T16:59:32.789895Z  INFO tailwindcss_oxide::scanner: Source: Auto { base: "E:\\Mizuki_blog" }
+2026-07-05T16:59:32.822569Z  INFO tailwindcss_oxide::scanner: Provided sources:
+2026-07-05T16:59:32.822580Z  INFO tailwindcss_oxide::scanner: Source: PublicSourceEntry { base: "E:/Mizuki_blog", pattern: "**/*", negated: false }
+2026-07-05T16:59:32.823104Z  INFO tailwindcss_oxide::scanner: Optimized sources:
+2026-07-05T16:59:32.823111Z  INFO tailwindcss_oxide::scanner: Source: Auto { base: "E:\\Mizuki_blog" }
+2026-07-05T16:59:32.824147Z  INFO tailwindcss_oxide::scanner: Provided sources:
+2026-07-05T16:59:32.824153Z  INFO tailwindcss_oxide::scanner: Source: PublicSourceEntry { base: "E:/Mizuki_blog", pattern: "**/*", negated: false }
+2026-07-05T16:59:32.824651Z  INFO tailwindcss_oxide::scanner: Optimized sources:
+2026-07-05T16:59:32.824660Z  INFO tailwindcss_oxide::scanner: Source: Auto { base: "E:\\Mizuki_blog" }
