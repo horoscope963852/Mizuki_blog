@@ -37,8 +37,8 @@ export const siteConfig: SiteConfig = {
     text: "horoscope's blog",
     // 顶栏标题图标路径，默认使用 public/assets/home/home.webp
     icon: "assets/home/home.webp",
-    // 网站Logo图片路径
-    logo: "assets/home/default-logo.webp",
+    // 网站Logo图片路径（仅在上方的 mode 为 "logo" 时生效）
+    logo: "assets/home/home.webp",
   },
 
   // 页面自动缩放配置
@@ -108,18 +108,8 @@ export const siteConfig: SiteConfig = {
   banner: {
     // 支持单张图片或图片数组，当数组长度 > 1 时自动启用轮播
     src: {
-      desktop: [
-        "/assets/desktop-banner/1.webp",
-        "/assets/desktop-banner/2.webp",
-        "/assets/desktop-banner/3.webp",
-        "/assets/desktop-banner/4.webp",
-      ], // 桌面横幅图片
-      mobile: [
-        "/assets/mobile-banner/1.webp",
-        "/assets/mobile-banner/2.webp",
-        "/assets/mobile-banner/3.webp",
-        "/assets/mobile-banner/4.webp",
-      ], // 移动横幅图片
+      desktop: ["/assets/desktop-banner/5.webp"], // 桌面横幅图片
+      mobile: ["/assets/mobile-banner/5.webp"], // 移动横幅图片
     }, // 使用本地横幅图片
 
     position: "center", // 等同于 object-position，仅支持 'top', 'center', 'bottom'。默认为 'center'
@@ -162,9 +152,9 @@ export const siteConfig: SiteConfig = {
     },
 
     credit: {
-      enable: false, // 显示横幅图片来源文本
+      enable: true, // 显示横幅图片来源文本
 
-      text: "Describe", // 要显示的来源文本
+      text: "电子科技大学宣邦楼", // 要显示的来源文本
       url: "", // （可选）原始艺术品或艺术家页面的 URL 链接
     },
 
@@ -184,11 +174,11 @@ export const siteConfig: SiteConfig = {
   generateOgImages: false, // 启用生成OpenGraph图片功能,注意开启后要渲染很长时间，不建议本地调试的时候开启
   favicon: [
     // 留空以使用默认 favicon
-    // {
-    //   src: '/favicon/icon.png',    // 图标文件路径
-    //   theme: 'light',              // 可选，指定主题 'light' | 'dark'
-    //   sizes: '32x32',              // 可选，图标大小
-    // }
+    {
+      src: "/assets/home/home.webp", // 图标文件路径
+      theme: "light", // 可选，指定主题 'light' | 'dark'
+      //  sizes: "64x64", // 可选，图标大小
+    },
   ],
 
   // 字体现在通过 astro.config.mjs 的 fonts 选项配置（Astro Font API）
@@ -210,7 +200,7 @@ export const siteConfig: SiteConfig = {
   },
   // 图片优化配置
   imageOptimization: {
-    formats: "webp", // 图片输出格式："avif"、"webp" 或 "both"（avif+webp，最优质量但构建更慢）
+    formats: "both", // 图片输出格式："avif"、"webp" 或 "both"（avif+webp，最优质量但构建更慢）
     quality: 85, // 图片质量，推荐 70-85
     noReferrerDomains: [
       // 需要添加 referrerpolicy="no-referrer" 的域名（支持通配符）
