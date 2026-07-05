@@ -155,7 +155,7 @@ export const siteConfig: SiteConfig = {
       enable: true, // 显示横幅图片来源文本
 
       text: "电子科技大学宣邦楼", // 要显示的来源文本
-      url: "", // （可选）原始艺术品或艺术家页面的 URL 链接
+      url: "https://www.uestc.edu.cn", // （可选）原始艺术品或艺术家页面的 URL 链接
     },
 
     navbar: {
