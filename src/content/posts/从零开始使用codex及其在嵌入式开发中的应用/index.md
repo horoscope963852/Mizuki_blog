@@ -3,13 +3,13 @@ title: "从零开始使用 codex 及其在嵌入式开发中的应用"
 published: 2026-04-21
 description: "OpenAI codex的安装配置教程及其在嵌入式开发中的应用实践"
 tags: ["codex", "AI", "嵌入式开发", "开发工具"]
-category: "技术"
+category: "AI技术"
 draft: false
 ---
 
 > 几个月没写博客了，这篇博客就最近几个月使用 codex 的心得来写一篇 codex 的入门教程，有内容上不妥或可以改进的地方欢迎各位在评论区指出。
 
-> 
+>
 
 - 为什么要使用 codex ？作为 **agent** 级别的AI工具，天生比网页端的 chatgpt 具有更强的能力，可以直接读取和写入文件，代替用户在系统中进行操作，尤其体现在Linux系统（例如云服务器）中。
 
@@ -111,10 +111,11 @@ multi_agent = true
 
 使用下面的命令打开codex的配置文件，再将配置文件替换为下面的内容（仅以我的为例）：
 
+```bash
+nano ~/.codex/config.toml
 ```
-nano ~/.codex/config.toml`
 
-```
+```toml
 model_provider = "OpenAI"
 model = "gpt-5.4"
 review_model = "gpt-5.4"
@@ -149,9 +150,9 @@ hide_full_access_warning = true
 nano ~/.codex/auth.json
 ```
 
-```
+```json
 {
-  "OPENAI_API_KEY": "**sk-1234567890abcd**"
+  "OPENAI_API_KEY": "sk-1234567890abcd"
 }
 ```
 
@@ -164,7 +165,8 @@ nano ~/.codex/auth.json
 在对话框中输入：
 
 ```
-/approvals`
+/approvals
+```
 
 即可手动选择审批模式。默认模式为对话模式，读写文件时需要用户确认才会继续运行。**full access** 模式会授予 codex 系统级权限，任何读写和修改操作都会自动执行。使用此模式比较方便省力，但是也需要用户承担 **误删数据**、**系统崩溃** 的风险。
 
@@ -186,8 +188,9 @@ nano ~/.codex/auth.json
 
 在 codex 未启动时，输入：
 
+```bash
+codex resume
 ```
-codex resume`
 
 即可查找历史会话。也可以使用下面的命令直接恢复到上一个会话：
 
@@ -216,7 +219,7 @@ brew install shayne-snap/tap/waylog
 
 安装完成后先添加到 bath 中，再执行 `waylog pull` 即可。
 
-[ GitHub](https://github.com/)[shayne-snap/waylog-cli](https://github.com/shayne-snap/waylog-cli)  
+:::github{repo="shayne-snap/waylog-cli"}
 
 # codex 在嵌入式开发中的应用
 

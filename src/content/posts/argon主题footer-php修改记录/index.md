@@ -3,8 +3,8 @@ title: "Argon主题footer.php修改记录"
 published: 2025-10-30
 description: "通过修改Argon主题的footer.php文件，添加显示查询次数和内存占用功能，并删除版权声明的方法记录"
 tags: ["WordPress", "Argon主题", "PHP", "网站美化"]
-category: "技术"
-draft: false
+category: "前端技术"
+draft: true
 ---
 
 ## 修改过程

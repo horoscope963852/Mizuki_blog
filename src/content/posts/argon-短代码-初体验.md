@@ -3,7 +3,7 @@ title: "Argon 短代码 测试"
 published: 2025-11-04
 description: "测试Argon主题支持的各种短代码功能，包括提示框、标签、进度条等"
 tags: ["Argon主题", "短代码", "测试"]
-category: "技术"
+category: "前端技术"
 draft: true
 ---
 
@@ -34,7 +34,7 @@ draft: true
 [progressbar progress="40" color="green"]绿色进度条[/progressbar]
 [progressbar progress="66" color="red"]红色进度条[/progressbar]
 [progressbar progress="80" color="blue"]蓝色进度条[/progressbar]
-[progressbar progress="100" color="orange"]橙色进度条[/progressbar] 
+[progressbar progress="100" color="orange"]橙色进度条[/progressbar]
 [progressbar progress="23"][/progressbar]
 [progressbar]没有指明参数的进度条[/progressbar]
 [progressbar progress="66.66"]小数进度条[/progressbar]
@@ -89,9 +89,9 @@ draft: true
 [hidden type="blur"]模糊隐藏文本[/hidden]
 [hidden tip="你知道的太多了"]鼠标停留会有提示[/hidden]
 
- ::github{repo="solstice23/argon-theme"}
+::github{repo="solstice23/argon-theme"}
 
-[ GitHub](https://github.com/)[solstice23/argon-theme](https://github.com/solstice23/argon-theme)  
+[ GitHub](https://github.com/)[solstice23/argon-theme](https://github.com/solstice23/argon-theme)
 
 [video url="https://xxxxx.com/xxxxx.mp4"][/video]
 [video url="https://xxxxx.com/xxxxx.mp4" height="240" width="320"][/video]

@@ -3,7 +3,7 @@ title: "将Deepseek-v4 API接入Claude Code"
 published: 2026-04-29
 description: "将Deepseek-v4 API接入Claude Code CLI的详细配置教程"
 tags: ["Deepseek", "Claude Code", "AI", "API"]
-category: "技术"
+category: "AI技术"
 draft: false
 ---
 
@@ -37,8 +37,9 @@ npm install -g @anthropic-ai/claude-code
 
 用下面的命令检查Claude Code CLI是否安装成功：
 
+```bash
+claude --version
 ```
-claude --version`
 
 之后直接在终端中输入`claude`命令即可启动Claude Code CLI。
 
@@ -106,7 +107,10 @@ claude --version`
 ```json
 [
   { "name": "ANTHROPIC_AUTH_TOKEN", "value": "你的API密钥" },
-  { "name": "ANTHROPIC_BASE_URL", "value": "https://api.deepseek.com/anthropic" },
+  {
+    "name": "ANTHROPIC_BASE_URL",
+    "value": "https://api.deepseek.com/anthropic"
+  },
   { "name": "ANTHROPIC_MODEL", "value": "deepseek-v4-pro[1m]" },
   { "name": "ANTHROPIC_DEFAULT_OPUS_MODEL", "value": "deepseek-v4-pro[1m]" },
   { "name": "ANTHROPIC_DEFAULT_SONNET_MODEL", "value": "deepseek-v4-pro[1m]" },

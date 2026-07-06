@@ -3,7 +3,7 @@ title: "Frp优化指南"
 published: 2025-12-27
 description: "从协议优化、网络调优、资源管理、安全加固四个维度系统性优化FRP"
 tags: ["frp", "内网穿透", "优化", "网络"]
-category: "技术"
+category: "网络技术"
 draft: false
 ---
 
@@ -72,7 +72,7 @@ use_encryption = false       # 安全场景下按需开启
 
 #### **1. 关闭非必要功能**
 
-```
+```ini
 # 服务端配置
 [common]
 disable_log_color = true     # 关闭日志颜色减少IO
@@ -99,11 +99,11 @@ CPUQuota=50%               # 限制CPU占用
 
 - **启用Prometheus监控** （frps v0.33+）：
 
-```
-  [common]
-  dashboard_addr = 0.0.0.0
-  dashboard_port = 7500
-  enable_prometheus = true   # 暴露metrics接口
+```ini
+[common]
+dashboard_addr = 0.0.0.0
+dashboard_port = 7500
+enable_prometheus = true   # 暴露metrics接口
 ```
 
 **监控指标**：`frps_current_connections`、`frps_traffic_in`等
@@ -164,20 +164,28 @@ tcp_mux = true
 
 - **日志轮转**：避免磁盘打满
 
-```
-  # /etc/logrotate.d/frps
-  /var/log/frps.log {
-      daily
-      rotate 7
-      compress
-  }
+```ini
+# /etc/logrotate.d/frps
+/var/log/frps.log {
+    daily
+    rotate 7
+    compress
+}
 ```
 
 - **告警配置**：监控连接数异常突增、带宽超限
 
 ### **四、实施优先级建议**
 
-优化项延迟改善性能节省实施难度推荐度**启用KCP协议**⭐⭐⭐⭐⭐⭐⭐低★★★★★**调整心跳间隔**⭐⭐⭐⭐⭐⭐低★★★★★**日志级别调优**-⭐⭐⭐⭐极低★★★★☆**内核参数优化**⭐⭐⭐⭐⭐中★★★★☆**部署边缘节点**⭐⭐⭐⭐⭐-高★★★★☆**启用压缩**⭐⭐⭐-⭐低★★★☆☆**资源限制**-⭐⭐⭐⭐中★★★☆☆
+| 优化项           | 延迟改善   | 性能节省 | 实施难度 | 推荐度 |
+| ---------------- | ---------- | -------- | -------- | ------ |
+| **启用KCP协议**  | ⭐⭐⭐⭐⭐ | ⭐⭐⭐   | 低       | ★★★★★  |
+| **调整心跳间隔** | ⭐⭐⭐⭐   | ⭐⭐     | 低       | ★★★★★  |
+| **日志级别调优** | -          | ⭐⭐⭐⭐ | 极低     | ★★★★☆  |
+| **内核参数优化** | ⭐⭐⭐⭐⭐ | ⭐       | 中       | ★★★★☆  |
+| **部署边缘节点** | ⭐⭐⭐⭐⭐ | -        | 高       | ★★★★☆  |
+| **启用压缩**     | ⭐⭐⭐     | -        | 低       | ★★★☆☆  |
+| **资源限制**     | -          | ⭐⭐⭐⭐ | 中       | ★★★☆☆  |
 
 **最佳实践**：先完成KCP+心跳调优（5分钟见效），再逐步实施监控和资源限制
 

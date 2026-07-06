@@ -3,7 +3,7 @@ title: "使用codex实现simulink自动建模仿真"
 published: 2026-04-29
 description: "配置codex自动进行Simulink建模和仿真的教程"
 tags: ["codex", "Simulink", "MATLAB", "AI", "仿真"]
-category: "技术"
+category: "AI技术"
 draft: false
 ---
 
@@ -13,12 +13,13 @@ draft: false
 
 下面直接开始配置教程。
 
-首先你需要在你的电脑上安装并配置好codex，我这里使用的是Windows，Mac系统尚不清晰。你可以参考[这篇博客](https://horoscope.xtkx.site/archives/253)。
+首先你需要在你的电脑上安装并配置好codex，我这里使用的是Windows，Mac系统尚不清晰。你可以参考[这篇博客](https://blog.horoscope.xtkx.site/posts/使用codex实现simulink自动建模仿真/)。
 
 打开你的桌面版codex，新建一个会话并使用下面的提示词：
 
 ```
-请认真阅读https://github.com/simulink/skills上的内容，然后帮我配置好里面的skills和mcp，以便我利用codex来自动进行simulink建模和仿真。`
+请认真阅读https://github.com/simulink/skills上的内容，然后帮我配置好里面的skills和mcp，以便我利用codex来自动进行simulink建模和仿真。
+```
 
 然后codex就会自动开始配置MCP和skills了，大约需要十分钟时间。
 
@@ -31,17 +32,23 @@ draft: false
 ```
 
 ```
+
 有几个问题：我的matlab实际的安装路径是D:\MATLAB\R2023b\bin\matlab.exe，这和你刚刚配置时的判断是一致的吗？另外，我应该如何在MATLAB 命令行运行 share_codex_simulink_session来启动？随后，请你设计一个简单的simulink建模仿真测试以便我来检验你的配置是否能够完美运行。
+
 ```
 
 ```
+
 这个文档是我刚刚和codex在另一个对话中的对话内容记录。请你阅读文档，然后分析这次的配置是否已经成功得到验证，以及是否还有不完美的地方。如果还有可以优化或者可以改进的地方，应该怎么改？给出解决方案但是先不要进行操作。
+
 ```
 
 ```
+
 好的，就按照你的方案进行完善，等把所有能改进的地方先改好，我再开始做一次测试。
+
 ```
 
 最后的最后是我在运行测试时的一张截图，codex可以直接操作你的matlab，你可以实时看到他如何添加模块、修改参数，完全自动。
 
-[![](./image_1.png)](./image_2.png)
+[![codex自动操作matlab的截图](./image_1.png)](./image_2.png)

@@ -3,12 +3,12 @@ title: "HTML 勾选框 测试"
 published: 2025-11-04
 description: "独立HTML勾选框组件的样式测试"
 tags: ["HTML", "CSS", "前端", "测试"]
-category: "技术"
+category: "前端技术"
 draft: true
 ---
 
 独立勾选框组件示例
-    
+
         /* 重置样式 - 仅影响组件内部 */
         .checkbox-component *,
         .checkbox-component *::before,
@@ -376,176 +376,152 @@ draft: true
                 opacity: 0;
             }
         }
-    
 
-    
-    
-        
+
+
+
+
+
 # 网站其他内容
 
-        
 这是网页的其他部分，不会受到勾选框组件的影响。
 
         普通按钮
-    
 
-    
-    
-        
+
+
+
+
+
 ## 🎯 交互式勾选框
 
-        
 点击下方不同的勾选框体验各种交互效果
 
-        
-        
-            
 ### 📌 标准复选框
 
-            
-                
-                
                 我已阅读并同意服务条款
-            
-            
-                
-                
-                订阅邮件通知
-            
-            
-                
-                
-                参与用户调研
-            
-        
 
-        
-        
-            
+
+
+
+                订阅邮件通知
+
+
+
+
+                参与用户调研
+
+
+
+
+
+
+
 ### 🔘 开关式复选框
 
-            
-                
-                    
-                    
-                
                 开启深色模式
-            
-            
-                
-                    
-                    
-                
-                启用桌面通知
-            
-            
-                
-                    
-                    
-                
-                自动保存草稿
-            
-        
 
-        
-        
-            
+
+
+
+
+
+                启用桌面通知
+
+
+
+
+
+
+                自动保存草稿
+
+
+
+
+
+
+
 ### ❤️ 收藏式复选框
 
-            
-                
-                
-                    
                     收藏这篇文章
-                
-            
-            
-                
-                
-                    
-                    关注作者
-                
-            
-        
 
-        
-        
+
+
+
+
+
+                    关注作者
+
+
+
+
+
+
             全选
             取消全选
             反选
-        
 
-        
-        
+
+
+
             📊 实时状态监控
-            
-                
-            
-        
-    
 
-    
-    
-        
+
+
+
+
+
+
+
+
+
 ## 另一个内容区域
 
-        
 这里的内容完全独立，不受上方勾选框组件的影响。
 
-    
-
-    
-    
-        
 ## 📋 独立组件实例 2
 
-        
 每个组件都是完全独立的
 
-        
-            
 ### 🔔 通知设置
 
-            
-                
-                
                 接收系统通知
-            
-            
-                
-                    
-                    
-                
+
+
+
+
+
+
                 邮件提醒
-            
-        
 
-        
+
+
+
             📊 组件2状态
-            
-                
-            
-        
-    
 
-    
+
+
+
+
+
+
         // 组件管理器 - 确保每个组件独立运行
         class CheckboxComponentManager {
             constructor(componentId) {
                 this.component = document.getElementById(componentId);
                 if (!this.component) return;
-                
+
                 this.componentId = componentId;
                 this.checkboxes = this.component.querySelectorAll('input[type="checkbox"]');
                 this.statusContainer = this.component.querySelector('.status-container');
-                
+
                 this.init();
             }
 
             init() {
                 // 更新状态显示
                 this.updateStatus();
-                
+
                 // 为每个复选框添加事件监听
                 this.checkboxes.forEach(checkbox => {
                     checkbox.addEventListener('change', () => {
@@ -558,18 +534,18 @@ draft: true
             // 更新状态显示
             updateStatus() {
                 if (!this.statusContainer) return;
-                
+
                 this.statusContainer.innerHTML = '';
                 this.checkboxes.forEach((checkbox, index) => {
                     const statusItem = document.createElement('div');
                     statusItem.className = `status-item ${checkbox.checked ? 'checked' : 'unchecked'}`;
-                    
+
                     const label = this.getLabelText(checkbox);
                     statusItem.innerHTML = `
-                        
+
                         ${label}: ${checkbox.checked ? '✅ 已选中' : '❌ 未选中'}
                     `;
-                    
+
                     this.statusContainer.appendChild(statusItem);
                 });
             }
@@ -622,9 +598,9 @@ draft: true
                 const notification = document.createElement('div');
                 notification.className = 'checkbox-notification';
                 notification.textContent = `[${this.componentId}] ${message}`;
-                
+
                 document.body.appendChild(notification);
-                
+
                 setTimeout(() => {
                     notification.style.animation = 'slideOut 0.3s ease';
                     setTimeout(() => {

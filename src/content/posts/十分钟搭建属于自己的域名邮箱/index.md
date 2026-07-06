@@ -3,7 +3,7 @@ title: "十分钟搭建属于自己的域名邮箱"
 published: 2025-12-22
 description: "使用阿里云企业邮箱免费版快速搭建域名邮箱的完整教程"
 tags: ["域名邮箱", "阿里云", "邮箱", "建站"]
-category: "技术"
+category: "网络技术"
 draft: false
 ---
 
@@ -37,7 +37,7 @@ draft: false
 
 在这之后，我们需要进入控制台进行域名的解析，“设置解析”中有一键操作的按钮，非常方便。之后我们就可以使用mail+域名作为网址来访问我们的域名邮箱，但是一个明显的问题随之而来：使用mail+域名作为网址时，访问是http协议，也就是完全明文的。通过搜索 企业邮箱+SSL证书 我们可以了解到，为阿里云企业邮箱添加SSL的两个前提条件是：域名已经经过备案+企业邮箱不是免费版套餐。那么我们就可以直接放弃了。
 
-我们继续选择使用qiye.aliyun.com[https://www.ali-exmail.cn/Land/](https://www.ali-exmail.cn/Land/)这个网址来作为我们邮箱的访问入口，管理员账户是postmaster@你的域名，需要设置初始密码并绑定手机号，后台有添加账号、SMTP等各种设置，功能丰富程度基本不比QQ邮箱逊色。
+我们继续选择使用~~qiye.aliyun.com~~[https://www.ali-exmail.cn/Land/](https://www.ali-exmail.cn/Land/)这个网址来作为我们邮箱的访问入口，管理员账户是postmaster@你的域名，需要设置初始密码并绑定手机号，后台有添加账号、SMTP等各种设置，功能丰富程度基本不比QQ邮箱逊色。
 
 [![](./image_2.png)](./image_2.png)
 
