@@ -3,15 +3,17 @@ title: "VPS常用命令及脚本备忘录"
 published: 2025-11-20
 description: "收集整理的VPS常用命令和脚本，包括测速、优化、流媒体解锁等"
 tags: ["VPS", "Linux", "运维", "脚本"]
-category: "技术"
-draft: false
+category: "网络技术"
+draft: true
 ---
 
 正式成为一名新人MJJ，记录一下比较实用的脚本，后面用得多了再来评价一下好不好用。
 
 ## 查询登陆失败次数
 
-`sudo journalctl -u ssh --no-pager | grep "Failed password" | wc -l`
+```bash
+sudo journalctl -u ssh --no-pager | grep "Failed password" | wc -l
+```
 
 ## Node Quality
 

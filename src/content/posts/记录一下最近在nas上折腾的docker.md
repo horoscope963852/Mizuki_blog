@@ -3,7 +3,7 @@ title: "记录一下最近在FnOS上折腾的docker"
 published: 2025-11-06
 description: "在飞牛NAS上安装Openlist、Open WebUI、AstrBot等Docker项目的记录"
 tags: ["NAS", "Docker", "飞牛", "运维"]
-category: "技术"
+category: "网络技术"
 draft: false
 ---
 
@@ -42,7 +42,9 @@ docker run -d -p 3002:8080 \
 
 跑QQ机器人的小道具，无需多言。
 
-`sudo docker run -itd -p 6180-6200:6180-6200 -p 11451:11451 -v $PWD/data:/AstrBot/data -v /etc/localtime:/etc/localtime:ro -v /etc/timezone:/etc/timezone:ro --name astrbot m.daocloud.io/docker.io/soulter/astrbot:latest`
+```bash
+sudo docker run -itd -p 6180-6200:6180-6200 -p 11451:11451 -v $PWD/data:/AstrBot/data -v /etc/localtime:/etc/localtime:ro -v /etc/timezone:/etc/timezone:ro --name astrbot m.daocloud.io/docker.io/soulter/astrbot:latest
+```
 
 ```bash
 docker run -d \
@@ -71,7 +73,7 @@ redir-port: 7892
 allow-lan: true
 mode: Rule
 log-level: silent
-external-controller: '0.0.0.0:9090'
+external-controller: "0.0.0.0:9090"
 secret: ""
 ```
 
@@ -165,7 +167,7 @@ services:
 
 首先，docker安装时默认连接到bridge网络中，这个网络中每个容器的IP会变动，而且不能用容器的名称来作为IP互相访问。所以我们需要新建一个自定义网络，我这里的自定义网络名叫botnet。
 
-之后让所有的容器都连接到这个botnet网络，可以是安装时设置  --network botnet \  或者安装后再修改连接的网络。（后者可能丢失容器中的数据，我的Open webUI就是这样丢了一次数据，不过好在补救并不难）
+之后让所有的容器都连接到这个botnet网络，可以是安装时设置 --network botnet \ 或者安装后再修改连接的网络。（后者可能丢失容器中的数据，我的Open webUI就是这样丢了一次数据，不过好在补救并不难）
 
 在自定义的网络中，虽然每次重启容器的IP还是会发生变动，但是现在可以用容器名来作为IP互相访问了，比如 `http://clash:9090` 表示容器Clash的9090端口。
 

@@ -3,7 +3,7 @@ title: "在QWRT系统上运行校园网登录脚本"
 published: 2026-01-01
 description: "在OpenWrt系统上部署校园网自动登录脚本并设置开机自启"
 tags: ["OpenWrt", "校园网", "路由器", "自动登录"]
-category: "技术"
+category: "网络技术"
 draft: false
 ---
 
@@ -120,7 +120,8 @@ chmod +x /etc/init.d/uestc
 启动脚本：
 
 ```
-/etc/init.d/uestc start`
+/etc/init.d/uestc start
+```
 
 查看日志：
 

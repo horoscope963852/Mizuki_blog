@@ -3,8 +3,8 @@ title: "Windows 10 PC 配置任务交接文档"
 published: 2026-05-11
 description: "网络接入控制综合设计实验中Windows 10 PC网关配置的交接文档"
 tags: ["Windows", "网络配置", "校园网", "实验"]
-category: "技术"
-draft: false
+category: "课设作业"
+draft: true
 ---
 
 > 注意：此文档是以下图一为拓扑进行的配置，后由于课程要求拓扑更新为下图二。
@@ -256,7 +256,8 @@ route print
 可增加一条静态路由：
 
 ```
- route -p add 10.10.10.0 mask 255.255.255.0 192.168.0.1`
+route -p add 10.10.10.0 mask 255.255.255.0 192.168.0.1
+```
 
 这种情况下，Windows 侧 NAT 设计也应覆盖该 PPPoE 用户网段。
 
@@ -266,8 +267,7 @@ route print
 
 需要明确告诉负责 PPPoE 服务器的同学：
 
-- PPPoE 服务器上联口地址设为 `192.168.0.1/24
-```
+- PPPoE 服务器上联口地址设为 `192.168.0.1/24`
 
 - PPPoE 服务器默认网关设为 `192.168.0.254`
 

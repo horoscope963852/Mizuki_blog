@@ -4,7 +4,7 @@ published: 2025-11-22
 description: "RackNerd黑五促销VPS的性能测试记录，位于洛杉矶DC02机房"
 tags: ["VPS", "RackNerd", "测试", "洛杉矶"]
 category: "技术"
-draft: false
+draft: true
 ---
 
 这是我购买的第一台国外VPS，位于美国洛杉矶DC02机房。
@@ -38,23 +38,23 @@ Country    : United States
 fio Disk Speed Tests (Mixed R/W 50/50) (Partition -):
 ---------------------------------
 Block Size | 4k            (IOPS) | 64k           (IOPS)
-  ------   | ---            ----  | ----           ---- 
+  ------   | ---            ----  | ----           ----
 Read       | 74.78 MB/s   (18.6k) | 1.10 GB/s    (17.3k)
 Write      | 74.98 MB/s   (18.7k) | 1.11 GB/s    (17.4k)
 Total      | 149.77 MB/s  (37.4k) | 2.22 GB/s    (34.7k)
-           |                      |                     
+           |                      |
 Block Size | 512k          (IOPS) | 1m            (IOPS)
-  ------   | ---            ----  | ----           ---- 
+  ------   | ---            ----  | ----           ----
 Read       | 1.40 GB/s     (2.7k) | 1.35 GB/s     (1.3k)
 Write      | 1.47 GB/s     (2.8k) | 1.44 GB/s     (1.4k)
 Total      | 2.87 GB/s     (5.6k) | 2.79 GB/s     (2.7k)
 
 Geekbench 5 Benchmark Test:
 ---------------------------------
-Test            | Value                         
-                |                               
-Single Core     | 672                           
-Multi Core      | 1295                          
+Test            | Value
+                |
+Single Core     | 672
+Multi Core      | 1295
 Full Test       | https://browser.geekbench.com/v5/cpu/23918248
 
  SysBench CPU 测试 (Fast Mode, 1-Pass @ 5sec)
