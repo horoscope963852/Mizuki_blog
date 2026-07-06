@@ -61,7 +61,7 @@ draft: true
 
 ## 3. 网络角色和拓扑
 
-```
+```text
  校园网
    ^
    |  DHCP: 192.168.2.X
@@ -255,7 +255,7 @@ route print
 
 可增加一条静态路由：
 
-```
+```cmd
 route -p add 10.10.10.0 mask 255.255.255.0 192.168.0.1
 ```
 
@@ -297,7 +297,7 @@ route -p add 10.10.10.0 mask 255.255.255.0 192.168.0.1
 
 在 Windows 10 上执行：
 
-```
+```powershell
  ipconfig
  Get-NetNat
 route print
