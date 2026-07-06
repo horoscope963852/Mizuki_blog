@@ -39,7 +39,7 @@ sudo apt install nodejs
 sudo apt install npm
 ```
 
-```
+```bash
 # 对于国外云服务器，推荐使用官方镜像安装
 sudo npm install -g @openai/codex
 # 对于物理机或国内云服务器，使用国内镜像安装更快

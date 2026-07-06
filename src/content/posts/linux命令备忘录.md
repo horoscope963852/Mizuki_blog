@@ -17,46 +17,46 @@ sudo journalctl -u ssh --no-pager | grep "Failed password" | wc -l
 
 ## Node Quality
 
-```
+```bash
 bash <(curl -sL https://run.NodeQuality.com)
 ```
 
 ## 流媒体解锁
 
-```
+```bash
 bash <(curl -L -s check.unlock.media)
 ```
 
 ## 网页&DNS测速
 
-```
+```bash
 bash <(wget -qO- https://raw.githubusercontent.com/Cd1s/network-latency-tester/main/latency.sh)
 ```
 
 ## Speedtest 多线程测速
 
-```
+```bash
 curl -sL nws.sh | bash
 ```
 
 ## 国内测速
 
-```
+```bash
 bash <(curl -sL https://raw.githubusercontent.com/i-abc/Speedtest/main/speedtest.sh)
 ```
 
 ## 开启bbr和自动调优
 
-```
+```bash
 bash <(curl -sL https://raw.githubusercontent.com/yahuisme/network-optimization/main/script.sh)
 ```
 
-```
+```bash
 bash <(curl -l -s https://raw.githubusercontent.com/byJoey/Actions-bbr-v3/refs/heads/main/install.sh)
 ```
 
 ## 查看版本号与内核
 
-```
+```bash
 echo "内核: $(uname -r)" && echo "发行版: $(cat /etc/os-release | grep PRETTY_NAME | cut -d'"' -f2)"
 ```

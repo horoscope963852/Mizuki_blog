@@ -11,7 +11,7 @@ draft: true
 
 # 💻基本信息
 
-```
+```text
 Basic System Information:
 ---------------------------------
 Uptime     : 0 days, 0 hours, 7 minutes

@@ -93,7 +93,7 @@ webServer.user = "admin"      # 控制台账号
 webServer.password = "admin"  # 控制台密码
 ```
 
-```
+```toml
 # frpc.toml
 
 serverAddr = "your_server_ip" # 填写你的公网服务器IP
@@ -234,11 +234,11 @@ echo "[✓] frp 双向 TLS 证书已生成："
 ls -l /etc/frp/tls
 ```
 
-```
+```bash
 sudo chmod +x gen-frp-tls.sh #给脚本执行权
 ```
 
-```
+```bash
 sudo ./gen-frp-tls.sh #运行脚本
 ```
 
@@ -262,7 +262,7 @@ tls_key_file  = /etc/frp/tls/server.key
 tls_trusted_ca_file = /etc/frp/tls/ca.crt      # 只允许自家 CA 签的客户端
 ```
 
-```
+```toml
 # frpc.toml
 
 # ===== 新增 TLS =====

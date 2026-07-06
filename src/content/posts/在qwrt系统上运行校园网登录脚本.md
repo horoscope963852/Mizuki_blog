@@ -85,7 +85,7 @@ nohup python3 -u "$PY_DIR/always_online.py" >> "$LOG_FILE" 2>&1 &
 log "start_uestd.sh finished, always_online.py is running in background."
 ```
 
-```
+```bash
 chmod +x /opt/AutoLogin/UESTC--main/start_uestd.sh
 ```
 
@@ -112,14 +112,14 @@ stop() {
 }
 ```
 
-```
+```bash
 chmod +x /etc/init.d/uestc
 /etc/init.d/uestc enable
 ```
 
 启动脚本：
 
-```
+```bash
 /etc/init.d/uestc start
 ```
 
