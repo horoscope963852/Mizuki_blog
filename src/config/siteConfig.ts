@@ -174,11 +174,11 @@ export const siteConfig: SiteConfig = {
   generateOgImages: false, // 启用生成OpenGraph图片功能,注意开启后要渲染很长时间，不建议本地调试的时候开启
   favicon: [
     // 留空以使用默认 favicon
-    {
-      src: "/assets/home/home.webp", // 图标文件路径
-      theme: "light", // 可选，指定主题 'light' | 'dark'
-      //  sizes: "64x64", // 可选，图标大小
-    },
+    //{
+    //  src: "", // 图标文件路径
+    //  theme: "light", // 可选，指定主题 'light' | 'dark'
+    //  sizes: "64x64", // 可选，图标大小
+    //},
   ],
 
   // 字体现在通过 astro.config.mjs 的 fonts 选项配置（Astro Font API）
