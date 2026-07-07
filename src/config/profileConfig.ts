@@ -4,7 +4,7 @@ import type { ProfileConfig } from "../types/config";
 export const profileConfig: ProfileConfig = {
   avatar: "assets/images/avatar.webp", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
   name: "horoscope",
-  bio: "电子科技大学网络工程在读，硬件工程师实习中",
+  bio: "不做无法实现的梦",
   typewriter: {
     enable: true, // 启用个人简介打字机效果
     speed: 80, // 打字速度（毫秒）
