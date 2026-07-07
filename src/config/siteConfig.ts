@@ -141,7 +141,14 @@ export const siteConfig: SiteConfig = {
       title: "horoscope's blog",
       switchable: true,
 
-      subtitle: ["请享受无法回避的痛苦", "沉没成本不参与重大决策"],
+      subtitle: [
+        "何处望神州？满眼风光北固楼",
+        "砚上三五笔，落墨鹧鸪啼",
+        "埋骨何须桑梓地，人生无处不青山",
+        "钱塘江上潮信来，今日方知我是我",
+        "今日长缨在手，何时缚住苍龙",
+        "冯唐易老，李广难封",
+      ],
       typewriter: {
         enable: true, // 启用副标题打字机效果
 
