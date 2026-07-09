@@ -3,7 +3,7 @@ import type { Translation } from "../translation";
 
 export const zh_CN: Translation = {
   [Key.home]: "主页",
-  [Key.about]: "关于我们",
+  [Key.about]: "关于我",
   [Key.archive]: "归档",
   [Key.search]: "搜索",
   [Key.other]: "其他",
@@ -27,7 +27,7 @@ export const zh_CN: Translation = {
 
   [Key.comments]: "评论",
   [Key.friends]: "友链",
-  [Key.friendsSubtitle]: "发现更多优质网站",
+  [Key.friendsSubtitle]: "发现更多精彩",
   [Key.friendsSearchPlaceholder]: "搜索友链名称或描述...",
   [Key.friendsFilterAll]: "全部",
   [Key.friendsNoResults]: "未找到匹配的友链",
@@ -62,7 +62,7 @@ export const zh_CN: Translation = {
 
   // 番剧页面
   [Key.animeTitle]: "我的追番记录",
-  [Key.animeSubtitle]: "记录我的二次元之旅",
+  [Key.animeSubtitle]: "进入我的动漫世界",
   [Key.animeStatusWatching]: "在看",
   [Key.animeStatusCompleted]: "看过",
   [Key.animeStatusPlanned]: "想看",

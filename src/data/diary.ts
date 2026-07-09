@@ -20,6 +20,14 @@ const diaryData: DiaryItem[] = [
 		date: "2025-01-15T10:30:00Z",
 		images: ["/images/diary/sakura.jpg", "/images/diary/1.webp"],
 	},*/
+
+  {
+    id: 1,
+    content:
+      "给电路板烧录固件的同事说烧录不了，排查半天居然是直流电源的问题。优利德的UDP6731不行，换成6721就可以了。图片分别是6731和6721经过板上的降压电路后电压的纹波，也不知道这种脉冲波形是怎么来的，AI说是电源纹波抑制比不足导致电源纹波进入了后级。",
+    date: "2026-07-09T15:22:00Z",
+    images: ["/images/diary/UDP6731.jpg", "/images/diary/UDP6721.jpg"],
+  },
 ];
 
 // 获取日记列表（按时间倒序）

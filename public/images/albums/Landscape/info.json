@@ -1,0 +1,10 @@
+{
+  "title": "我的摄影作品",
+  "hidden": false,
+  "description": "Just want to stay in it.",
+  "date": "2026-07-09",
+  "location": "",
+  "tags": ["Flowers", "Mountains", "Rivers", "Sunset", "Nature"],
+  "layout": "masonry",
+  "columns": 3
+}
