@@ -120,4 +120,4 @@ wp_enqueue_script("argonjs", $GLOBALS['assets_path'] . "/assets/js/argon.min.js"
 
 下面的压缩包中包含Argon主题原始文件，作为本站备份。
 
-[footer_backup](./image_1.zip)[下载](./image_1.zip)
+[footer_backup](/image_1.zip)[下载](/image_1.zip)

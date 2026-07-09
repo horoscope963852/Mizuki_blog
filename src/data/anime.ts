@@ -1,23 +1,23 @@
 // 本地番剧数据配置
 export interface AnimeItem {
-	title: string;
-	status: "watching" | "completed" | "planned";
-	rating: number;
-	cover: string;
-	description: string;
-	episodes: string;
-	year: string;
-	genre: string[];
-	studio: string;
-	link: string;
-	progress: number;
-	totalEpisodes: number;
-	startDate: string;
-	endDate: string;
+  title: string;
+  status: "watching" | "completed" | "planned";
+  rating: number;
+  cover: string;
+  description: string;
+  episodes: string;
+  year: string;
+  genre: string[];
+  studio: string;
+  link: string;
+  progress: number;
+  totalEpisodes: number;
+  startDate: string;
+  endDate: string;
 }
 
 const localAnimeList: AnimeItem[] = [
-	{
+  /*	{
 		title: "Lycoris Recoil",
 		status: "completed",
 		rating: 9.8,
@@ -96,7 +96,7 @@ const localAnimeList: AnimeItem[] = [
 		totalEpisodes: 12,
 		startDate: "2025-07",
 		endDate: "2025-10",
-	},
+	},*/
 ];
 
 export default localAnimeList;
