@@ -18,7 +18,7 @@ export const friendsData: FriendItem[] = [
     imgurl: "https://img.xtkx.site/2025/10/cropped-LOGO_透明.png",
     desc: "电子科技大学信息与通信工程学院学生创新创业中心",
     siteurl: "https://xtkx.site",
-    tags: ["University"],
+    tags: ["organization"],
   },
 ];
 
