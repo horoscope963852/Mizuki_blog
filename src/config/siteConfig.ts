@@ -142,6 +142,7 @@ export const siteConfig: SiteConfig = {
       switchable: true,
 
       subtitle: [
+        "雄关漫道真如铁，而今迈步从头越",
         "何处望神州？满眼风光北固楼",
         "砚上三五笔，落墨鹧鸪啼",
         "埋骨何须桑梓地，人生无处不青山",
