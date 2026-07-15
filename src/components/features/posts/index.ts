@@ -1,4 +1,5 @@
 export { default as LastModified } from "./LastModified.astro";
+export { default as PDFViewer } from "./PDFViewer.astro";
 export { default as PostCard } from "./PostCard.astro";
 export { default as PostListItem } from "./PostListItem.astro";
 export { default as PostMeta } from "./PostMeta.astro";

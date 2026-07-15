@@ -1,0 +1,74 @@
+---
+title: "Altium Designer 使用指南 - PDF.js 预览测试"
+published: 2026-07-16
+description: "测试使用 PDF.js 库在博客中嵌入 PDF 文档预览功能"
+tags: ["PCB设计", "Altium Designer", "硬件开发", "教程"]
+category: "技术笔记"
+draft: false
+---
+
+import PDFViewer from '../../components/features/posts/PDFViewer.astro';
+
+这是一篇用于测试 PDF.js 库方案的博客文章。与 iframe 方案不同，PDF.js 提供了完全自定义的 PDF 阅读器界面。
+
+## PDF.js 方案特点
+
+PDF.js 是 Mozilla 开发的一个通用的 PDF 渲染库，具有以下优势：
+
+1. **跨浏览器一致性**：所有浏览器显示效果完全相同
+2. **高度可定制**：可以自定义工具栏、主题、布局等
+3. **高级功能**：支持文本搜索、高亮、注释等
+4. **暗色模式**：完美支持深色主题
+
+## PDF 文档预览
+
+下面是使用 PDF.js 渲染的 PDF 文档：
+
+<PDFViewer url="/pdfs/AD使用.pdf" height={800} />
+
+## 功能说明
+
+上面的 PDF 预览器具有以下功能：
+
+- ✅ **翻页控制**：上一页/下一页按钮
+- ✅ **缩放功能**：放大/缩小文档
+- ✅ **页码显示**：显示当前页码和总页数
+- ✅ **下载功能**：一键下载 PDF 文件
+- ✅ **暗色模式**：自动适应系统主题
+- ✅ **响应式设计**：适配移动端
+
+## 与 iframe 方案的对比
+
+| 特性 | iframe 方案 | PDF.js 方案 |
+|------|------------|-------------|
+| 实现难度 | ⭐ 简单 | ⭐⭐⭐ 复杂 |
+| 跨浏览器一致性 | ⚠️ 一般 | ✅ 完美 |
+| 自定义程度 | ❌ 低 | ✅ 高 |
+| 暗色模式支持 | ❌ 无 | ✅ 支持 |
+| 依赖大小 | 0 | ~2MB |
+| 移动端体验 | ⚠️ 一般 | ✅ 好 |
+
+## 技术实现
+
+PDF.js 方案的核心实现：
+
+1. **安装依赖**：`pnpm add pdfjs-dist`
+2. **创建 Svelte 组件**：封装 PDF.js 的渲染逻辑
+3. **配置 Worker**：设置 PDF.js 的 worker 文件路径
+4. **响应式设计**：支持暗色模式和移动端
+
+## 使用方法
+
+如果你想在其他文章中使用 PDF.js 方案：
+
+```astro
+---
+import PDFViewer from '../../components/features/posts/PDFViewer.astro';
+---
+
+<PDFViewer url="/pdfs/your-document.pdf" height={800} />
+```
+
+## 下载链接
+
+如果需要下载 PDF 文档，可以[点击这里](/pdfs/AD使用.pdf)。

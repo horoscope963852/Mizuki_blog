@@ -1,0 +1,13 @@
+---
+// PDFViewer.astro - PDF.js 组件的 Astro 包装
+import PDFViewerSvelte from './PDFViewer.svelte';
+
+interface Props {
+  url: string;
+  height?: number;
+}
+
+const { url, height = 800 } = Astro.props;
+---
+
+<PDFViewerSvelte url={url} height={height} client:visible />
