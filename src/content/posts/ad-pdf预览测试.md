@@ -4,7 +4,7 @@ published: 2026-07-16
 description: "测试在博客中直接嵌入 PDF 文档预览功能"
 tags: ["PCB设计", "Altium Designer", "硬件开发", "教程"]
 category: "技术笔记"
-draft: false
+draft: true
 ---
 
 这是一篇用于测试 PDF 文档嵌入功能的博客文章。下面将直接展示 Altium Designer 使用指南的 PDF 文档。
@@ -35,9 +35,9 @@ draft: false
 2. 在 Markdown 文章中使用以下代码：
 
 ```html
-<iframe 
-  src="/pdfs/your-document.pdf" 
-  width="100%" 
+<iframe
+  src="/pdfs/your-document.pdf"
+  width="100%"
   height="800px"
   style="border: none; border-radius: 12px;"
 ></iframe>
