@@ -31,7 +31,7 @@ draft: false
 
 接着点开[企业邮箱免费版的申请页面](https://common-buy.aliyun.com/?commodityCode=alimail&userCode=a5fdv0ky&specCode=lx_18482#/buy)，这个入口藏得比较深，在企业邮箱首页是没法找到的。在申请页面选择我们账号上购买的域名就算正式开通了。
 
-[![](./image_1.png)](./image_1.png)
+![](./image_1.png)
 
 如图，企业邮箱免费版有很多限制，例如容量、账号数量等，由于1年和5年都是0元，所以直接选择5年就可以了，中途如果不想要了或者需要更换域名，都是可以直接操作的。
 
@@ -39,7 +39,7 @@ draft: false
 
 我们继续选择使用~~qiye.aliyun.com~~[https://www.ali-exmail.cn/Land/](https://www.ali-exmail.cn/Land/)这个网址来作为我们邮箱的访问入口，管理员账户是postmaster@你的域名，需要设置初始密码并绑定手机号，后台有添加账号、SMTP等各种设置，功能丰富程度基本不比QQ邮箱逊色。
 
-[![](./image_2.png)](./image_2.png)
+![](./image_2.png)
 
 ## 后记
 

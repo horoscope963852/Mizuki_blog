@@ -51,4 +51,4 @@ draft: false
 
 最后的最后是我在运行测试时的一张截图，codex可以直接操作你的matlab，你可以实时看到他如何添加模块、修改参数，完全自动。
 
-[![codex自动操作matlab的截图](./image_1.png)](./image_2.png)
+![codex自动操作matlab的截图](./image_1.png)

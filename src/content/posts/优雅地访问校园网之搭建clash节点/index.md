@@ -15,7 +15,7 @@ draft: true
 
 在使用代理时，我们通常会把购买得到的clash订阅连接导入clash客户端，客户端会通过订阅链接获取节点。通过这些节点中转，我们便可以访问被GFW阻止的服务。原理示意图如下：（图源[网络](https://pic1.zhimg.com/80/v2-dc19c0d872293294d4826c858a6deab6_720w.png)）
 
-[![](./image_1.png)](./image_1.png)
+![](./image_1.png)
 
 同理，是不是我们只需要让云服务器来作为代理服务器中转，就可以访问校园网了呢？
 
@@ -383,23 +383,23 @@ sudo chown www-data:www-data /var/www/xtkx.site/subscription/campus.yaml
 
 手机clash客户端日志：
 
-[![](./image_2.png)](./image_2.png)
+![](./image_2.png)
 
 云服务器Nginx 日志：(具体配置过程中增加了Nginx作为转发，在正文中未提到）
 
-[![](./image_3.png)](./image_3.png)
+![](./image_3.png)
 
 云服务器Xray 日志：
 
-[![](./image_4.png)](./image_4.png)
+![](./image_4.png)
 
 每当打开新的APP或者网站，这些实时日志都会显示出访问的请求来源和访问目标。
 
 下面时手机通过clash客户端访问在线实验平台、万方数据库的截图。
 
-[![](./image_5.jpg)](./image_6.jpg)
+![](./image_5.jpg)
 
-[![](./image_7.jpg)](./image_8.jpg)
+![](./image_7.jpg)
 
 ## 后记
 
