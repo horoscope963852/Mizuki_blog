@@ -72,7 +72,7 @@ Owl AI（订阅制）[https://api.owlai.tech/home](https://api.owlai.tech/home)
 
 ### Windows 版
 
-[![](./image_1.png)](./image_1.png)
+![](./image_1.png)
 
 点击右侧的 Open config.toml，在将配置文件替换为下面的内容（仅以我的为例）：
 
@@ -229,7 +229,7 @@ brew install shayne-snap/tap/waylog
 
 通过 keil assistant 插件使 VScode 直接调用 keil 的功能，加上 codex for VScode 插件带来的 AI 加持，我们可以通过现代且美观的 vscode 编辑器来完成嵌入式软件的开发。
 
-[![](./image_2.png)](./image_3.png)
+![](./image_2.png)
 
 还有下面这个视频，效果也是非常惊人的。
 

@@ -11,11 +11,11 @@ draft: true
 
 图一：
 
-[![](./image_1.png)](./image_1.png)
+![](./image_1.png)
 
 图二：
 
-[![](./image_2.jpeg)](./image_2.jpeg)
+![](./image_2.jpeg)
 
 ## 1. 任务背景
 

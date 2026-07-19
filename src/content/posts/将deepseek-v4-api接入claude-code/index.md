@@ -11,7 +11,7 @@ draft: false
 
 首先要说明的是，笔者目前还没有找到直接将官方开放平台创建的Deepseek-v4 API接入codex的方法，至少也需要使用中转站或者额外安装cc switch软件来实现，具体原因尚不清晰，只在网络上找到如下信息：
 
-[![](./image_1.png)](./image_2.png)
+![](./image_1.png)
 
 而Deepseek-v4 API接入Claude Code的办法在[Deepseek的官方文档](https://api-docs.deepseek.com/zh-cn/guides/agent_integrations/claude_code)中就已经说明，这也是本文写作的依据。
 
@@ -100,7 +100,7 @@ claude --version
 
 在VScode中使用`CTRL+，`快捷键打开设置，找到Claude Code，选择”**在setting.json中编辑**”。
 
-[![](./image_3.png)](./image_4.png)
+![](./image_3.png)
 
 在打开的配置文件中填写以下参数：
 
