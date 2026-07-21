@@ -21,6 +21,13 @@ const diaryData: DiaryItem[] = [
 		images: ["/images/diary/sakura.jpg", "/images/diary/1.webp"],
 	},*/
   {
+    id: 5,
+    content: "书背完了，五猖会也结束了。",
+    date: "2026-07-21T14:46:00Z",
+    images: ["/images/diary/260721.png"],
+  },
+
+  {
     id: 4,
     content: "一杯水一支烟，一个波形测一天。下辈子一定要做研发不做测试。",
     date: "2026-07-14T13:09:00Z",
