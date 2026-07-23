@@ -21,6 +21,13 @@ const diaryData: DiaryItem[] = [
 		images: ["/images/diary/sakura.jpg", "/images/diary/1.webp"],
 	},*/
   {
+    id: 6,
+    content: "修建长城的人是觉得累还是自豪呢",
+    date: "2026-07-23T13:59:00Z",
+    images: ["/images/diary/260723.jpg"],
+  },
+
+  {
     id: 5,
     content: "书背完了，五猖会也结束了。",
     date: "2026-07-21T14:46:00Z",
