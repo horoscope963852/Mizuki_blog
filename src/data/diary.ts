@@ -20,6 +20,15 @@ const diaryData: DiaryItem[] = [
 		date: "2025-01-15T10:30:00Z",
 		images: ["/images/diary/sakura.jpg", "/images/diary/1.webp"],
 	},*/
+
+  {
+    id: 7,
+    content:
+      "最近公司添置了冰柜，意外实现了雪糕自由。图中为今天下午公司投喂的巧乐兹",
+    date: "2026-07-24T15:15:00Z",
+    images: ["/images/diary/260724.jpg"],
+  },
+
   {
     id: 6,
     content: "修建长城的人是觉得累还是自豪呢",
