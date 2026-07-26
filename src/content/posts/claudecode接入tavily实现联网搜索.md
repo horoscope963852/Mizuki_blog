@@ -7,7 +7,7 @@ category: "AI技术"
 draft: false
 ---
 
-1. 首先在 C:\Users\你的用户名\.claude 这个路径下找到 settings.json 这个文件，在配置文件中添加 `"env": { "TAVILY_API_KEY": "你的密钥" }`。
+1. 首先在 `C:\Users\你的用户名\.claude` 这个路径下找到 `settings.json` 这个文件，在配置文件中添加 `"env": { "TAVILY_API_KEY": "你的密钥" }`。
 
 2. 接着在 Windows 终端中打开 Claudecode，依次输入下面的命令：
 
@@ -16,4 +16,4 @@ draft: false
 /plugin install tavily@skills
 ```
 
-3. 重启之后就可以开始使用联网搜索了
+3. 重启之后就可以开始使用联网搜索了。
