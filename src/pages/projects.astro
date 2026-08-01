@@ -21,12 +21,12 @@ const categories = [
 
 const getCategoryText = (category: string) => {
 	switch (category) {
-		case "web":
-			return i18n(I18nKey.projectsWeb);
-		case "mobile":
-			return i18n(I18nKey.projectsMobile);
-		case "desktop":
-			return i18n(I18nKey.projectsDesktop);
+		case "contest":
+			return i18n(I18nKey.projectsContest);
+		case "personal":
+			return i18n(I18nKey.projectsPersonal);
+		case "code":
+			return i18n(I18nKey.projectsCode);
 		case "other":
 			return i18n(I18nKey.projectsOther);
 		case UNCATEGORIZED:
@@ -38,12 +38,12 @@ const getCategoryText = (category: string) => {
 
 const getCategoryIcon = (category: string) => {
 	switch (category) {
-		case "web":
-			return "material-symbols:language";
-		case "mobile":
-			return "material-symbols:smartphone";
-		case "desktop":
-			return "material-symbols:desktop-windows";
+		case "contest":
+			return "material-symbols:trophy";
+		case "personal":
+			return "material-symbols:person";
+		case "code":
+			return "material-symbols:code";
 		case "other":
 			return "material-symbols:widgets";
 		default:

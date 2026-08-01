@@ -6,7 +6,7 @@ export interface Skill {
   name: string;
   description: string;
   icon: string; // Iconify icon name
-  category: "frontend" | "backend" | "database" | "tools" | "other";
+  category: "embedded" | "pcb" | "fpga" | "other";
   level: "beginner" | "intermediate" | "advanced" | "expert";
   experience: {
     years: number;
@@ -18,6 +18,157 @@ export interface Skill {
 }
 
 export const skillsData: Skill[] = [
+  // Embedded Skills
+  {
+    id: "stm32",
+    name: "STM32",
+    description:
+      "基于 ARM Cortex-M 的 32 位微控制器开发，熟悉 HAL 库/标准库与外设驱动编写，掌握定时器、ADC、UART、SPI、I2C 等常用外设。",
+    icon: "simple-icons:stmicroelectronics",
+    category: "embedded",
+    level: "beginner",
+    experience: { years: 1, months: 6 },
+    color: "#03234B",
+  },
+  {
+    id: "esp32",
+    name: "ESP32",
+    description:
+      "Wi-Fi/蓝牙物联网微控制器，熟悉 ESP-IDF 框架，掌握 MQTT 通信、Wi-Fi 配网与低功耗设计。",
+    icon: "simple-icons:espressif",
+    category: "embedded",
+    level: "beginner",
+    experience: { years: 0, months: 2 },
+    color: "#E7352C",
+  },
+  {
+    id: "c",
+    name: "C",
+    description:
+      "嵌入式 C 编程，裸机与 RTOS 环境下的驱动开发、内存管理与调试排错。",
+    icon: "logos:c",
+    category: "embedded",
+    level: "advanced",
+    experience: { years: 3, months: 0 },
+    color: "#A8B9CC",
+  },
+  /*{
+    id: "freertos",
+    name: "FreeRTOS",
+    description:
+      "轻量级实时操作系统，掌握任务调度、信号量、队列、软件定时器等机制。",
+    icon: "material-symbols:task-alt",
+    category: "embedded",
+    level: "intermediate",
+    experience: { years: 0, months: 8 },
+    color: "#126C9B",
+  },*/
+
+  // PCB Design Skills
+  {
+    id: "altium-designer",
+    name: "Altium Designer",
+    description:
+      "原理图与 PCB 设计，掌握层叠结构设计、阻抗控制、信号完整性与布线规范，熟悉 DRC 检查与 Gerber 输出。",
+    icon: "simple-icons:altiumdesigner",
+    category: "pcb",
+    level: "intermediate",
+    experience: { years: 0, months: 4 },
+    color: "#00A651",
+  },
+  {
+    id: "jlc-eeda",
+    name: "立创EDA",
+    description:
+      "国产 EDA 工具，原型验证与快速打样流程，熟悉嘉立创生态的元件库与 SMT 贴片下单。",
+    icon: "material-symbols:grid-on",
+    category: "pcb",
+    level: "advanced",
+    experience: { years: 2, months: 4 },
+    color: "#FF7A00",
+  },
+  /*{
+    id: "kicad",
+    name: "KiCad",
+    description:
+      "开源 EDA 工具，掌握原理图绘制、PCB 布局布线与 3D 预览，适用于开源项目协作。",
+    icon: "simple-icons:kicad",
+    category: "pcb",
+    level: "beginner",
+    experience: { years: 0, months: 4 },
+    color: "#314CB0",
+  },*/
+
+  // FPGA Skills
+  {
+    id: "verilog",
+    name: "Verilog",
+    description:
+      "硬件描述语言，掌握数字电路设计、状态机编写与时序仿真（ModelSim/QuestaSim）。",
+    icon: "material-symbols:code",
+    category: "fpga",
+    level: "beginner",
+    experience: { years: 0, months: 10 },
+    color: "#E44D26",
+  },
+  {
+    id: "vivado",
+    name: "Vivado",
+    description:
+      "Xilinx FPGA 开发套件，熟悉综合、实现、时序约束与上板调试流程。",
+    icon: "material-symbols:developer-board",
+    category: "fpga",
+    level: "beginner",
+    experience: { years: 0, months: 6 },
+    color: "#D6001C",
+  },
+
+  // Other Skills
+  {
+    id: "matlab",
+    name: "MATLAB/Simulink",
+    description:
+      "信号处理与系统建模仿真，掌握 Simulink 建模、脚本自动化与数据分析。",
+    icon: "material-symbols:show-chart",
+    category: "other",
+    level: "intermediate",
+    experience: { years: 1, months: 8 },
+    color: "#0076A8",
+  },
+  /*{
+    id: "hardware-testing",
+    name: "硬件测试与调试",
+    description:
+      "熟练使用示波器、万用表、逻辑分析仪与信号发生器，了解信号完整性（SI）基础与测试规范。",
+    icon: "material-symbols:graphic-eq",
+    category: "other",
+    level: "advanced",
+    experience: { years: 2, months: 0 },
+    color: "#5C6BC0",
+  },*/
+  {
+    id: "git",
+    name: "Git",
+    description:
+      "分布式版本控制，掌握分支管理、协作流程与文档托管，用于项目与笔记管理。",
+    icon: "logos:git-icon",
+    category: "other",
+    level: "beginner",
+    experience: { years: 2, months: 0 },
+    color: "#F05032",
+  },
+  {
+    id: "python",
+    name: "Python",
+    description:
+      "数据处理与自动化脚本，常用于测试数据处理、上位机开发与工具链集成。",
+    icon: "logos:python",
+    category: "other",
+    level: "intermediate",
+    experience: { years: 1, months: 0 },
+    color: "#3776AB",
+  },
+
   // Frontend Skills
   /*	{
 		id: "javascript",

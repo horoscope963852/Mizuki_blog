@@ -6,7 +6,7 @@ export interface Project {
   title: string;
   description: string;
   image: string;
-  category: "web" | "mobile" | "desktop" | "other";
+  category: "contest" | "personal" | "code" | "other";
   techStack: string[];
   status: "completed" | "in-progress" | "planned";
   liveDemo?: string;
@@ -21,19 +21,51 @@ export interface Project {
 
 export const projectsData: Project[] = [
   {
-    id: "高精度无线传输信号模拟系统",
+    id: "1",
     title: "高精度无线传输信号模拟系统",
     description:
       "该系统用于模拟产生无线通信中的直达信号(SD)和多径信号(SM)，并合路输出模拟的无线传输信号(SOut)。同时实现了对载波频率(fc)、信号调制(CW/AM)、多径时延、幅度衰减(α)和相对初相(φ)等关键信道参数的高精度可调。",
     image: "",
-    category: "other",
-    techStack: ["C", "ESP-IDF", "MQTT"],
-    status: "in-progress",
-    startDate: "2026-06-01",
-    endDate: "2024-06-01",
+    category: "contest",
+    techStack: ["stm32", "jlc-eeda", "c"],
+    status: "completed",
+    startDate: "2024-07-29",
+    endDate: "2024-08-01",
     featured: true,
-    tags: ["Hardware", "IoT", "Embedded"],
-    showImage: false, // 暂无图片，与现有无图项目保持一致
+    // tags: ["Hardware", "IoT", "Embedded"],
+    showImage: false,
+  },
+
+  {
+    id: "2",
+    title: "宽带射频信号自动接收与调制识别系统",
+    description:
+      "基于超外差接收机原理，针对88MHz至108MHz调频/调幅小信号，设计并制作了一台低功耗、高速度的通信接收机。该系统集成了低噪声放大器、混频器、滤波器和解调模块、功率放大器，实现了对未知信号的自动搜索、识别、解调和带载输出。",
+    image: "",
+    category: "contest",
+    techStack: ["stm32", "jlc-eeda", "c"],
+    status: "completed",
+    startDate: "2025-07-30",
+    endDate: "2025-08-02",
+    featured: true,
+    // tags: ["Hardware", "IoT", "Embedded"],
+    showImage: false,
+  },
+
+  {
+    id: "3",
+    title: "智能交互桌面机器人系统",
+    description:
+      "本项目旨在设计并制作一款集语音交互、听声辨位、触屏操作、肢体动作及无线控制于一体的多功能桌面机器人。系统通过多传感器融合与嵌入式处理，为用户提供自然、生动、智能的人机交互体验。",
+    image: "",
+    category: "contest",
+    techStack: ["stm32", "jlc-eeda", "python", "c"],
+    status: "completed",
+    startDate: "2025-04-11",
+    endDate: "2024-07-22",
+    featured: false,
+    // tags: ["Hardware", "IoT", "Embedded"],
+    showImage: false,
   },
 
   /*  {
