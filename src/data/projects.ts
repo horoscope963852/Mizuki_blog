@@ -20,6 +20,22 @@ export interface Project {
 }
 
 export const projectsData: Project[] = [
+  {
+    id: "高精度无线传输信号模拟系统",
+    title: "高精度无线传输信号模拟系统",
+    description:
+      "该系统用于模拟产生无线通信中的直达信号(SD)和多径信号(SM)，并合路输出模拟的无线传输信号(SOut)。同时实现了对载波频率(fc)、信号调制(CW/AM)、多径时延、幅度衰减(α)和相对初相(φ)等关键信道参数的高精度可调。",
+    image: "",
+    category: "other",
+    techStack: ["C", "ESP-IDF", "MQTT"],
+    status: "in-progress",
+    startDate: "2026-06-01",
+    endDate: "2024-06-01",
+    featured: true,
+    tags: ["Hardware", "IoT", "Embedded"],
+    showImage: false, // 暂无图片，与现有无图项目保持一致
+  },
+
   /*  {
     id: "mizuki",
     title: "Mizuki",
