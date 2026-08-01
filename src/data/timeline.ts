@@ -1,6 +1,100 @@
 import type { TimelineItem } from "../components/features/timeline/types";
 
 export const timelineData: TimelineItem[] = [
+  {
+    id: "current-study",
+    title: "网络工程",
+    description:
+      "主修课程包括模电数电、信号与系统、通信原理，以及网路算法、网络协议、网络安全、计算机通信网，目前已完成本科全部学分要求.",
+    type: "education",
+    startDate: "2023-09-01",
+    location: "成都",
+    organization: "电子科技大学",
+    skills: ["TCPIP", "数据库", "网络运维", "通信原理", "电路分析"],
+    achievements: [
+      "GPA: 3.21/4.0",
+      "2024-2025学年信通院学生会宣传部部长",
+      "2025-2026学年信通科协会长",
+    ],
+    icon: "material-symbols:school",
+    color: "#254392",
+    featured: true,
+  },
+  {
+    id: "intership in agibot",
+    title: "硬件实习生",
+    description:
+      "作为硬件实习生参与智元灵犀产品线的研发、测试、验证与售后工作，熟悉了硬件产品的开发流程.",
+    type: "work",
+    startDate: "2026-05-06",
+    endDate: "2026-08-31",
+    location: "深圳",
+    organization: "智元机器人",
+    position: "中央研发部-硬件研发部",
+    skills: ["AD", "Cadence", "域控制器", "Serdes", "电源测试"],
+    achievements: [
+      "参与灵犀 X2摄像头 GMSL 链路的测试",
+      "参与灵犀 X3麦克风电路的设计与验证",
+      "参与灵犀 X3运动控制电路的测试与验证",
+    ],
+    icon: "material-symbols:work",
+    color: "#63A0C9",
+    featured: true,
+  },
+  {
+    id: "wireless signal simulator",
+    title: "高精度无线传输信号模拟系统",
+    description:
+      "该系统用于模拟产生无线通信中的直达信号(SD)和多径信号(SM)，并合路输出模拟的无线传输信号(SOut)。同时实现了对载波频率(fc)、信号调制(CW/AM)、多径时延、幅度衰减(α)和相对初相(φ)等关键信道参数的高精度可调.",
+    type: "project",
+    startDate: "2024-07-29",
+    endDate: "2024-08-01",
+    skills: ["stm32", "立创EDA", "DDS", "AM/FM"],
+    achievements: [
+      "负责系统方案设计与论证，其中包含DDS、调制器及衰减器在内的模拟信号调理单元及以MCU为核心的的人机交互控制单元两个主要部分",
+      "负责器件选型及硬件电路设计工作，重点优化电源噪声相关指标，保证系统工作稳定性",
+      "系统单元模块的PCB设计及制作，包含调制器、衰减器及MCU控制模块，重点关注信号阻抗匹配，降低输出信号失真度",
+      "承担软硬件协同调试及系统指标测试工作，制定系统测试方案，确保在载波频率、调制深度、幅度、时延和相位等多个维度上的精度指标符合要求",
+    ],
+    icon: "material-symbols:database",
+    color: "#0ceac5",
+  },
+  {
+    id: "rf signal receiver",
+    title: "宽带射频信号自动接收与调制识别系统",
+    description:
+      "基于超外差接收机原理，针对88MHz至108MHz调频/调幅小信号，设计并制作了一台低功耗、高速度的通信接收机。该系统集成了低噪声放大器、混频器、滤波器和解调模块、功率放大器，实现了对未知信号的自动搜索、识别、解调和带载输出.",
+    type: "project",
+    startDate: "2025-07-30",
+    endDate: "2025-08-02",
+    skills: ["stm32", "立创EDA", "AM/FM", "LNA"],
+    achievements: [
+      "基于超外差接收机架构的硬件方案设计，完成88MHz至108MHz频率范围内的前端混频和滤波电路设计，并采取屏蔽措施有效抑制空间电磁干扰",
+      "系统单元模块PCB的绘制与制作，优化系统灵敏度，针对≤−95dBm的微弱接收信号实现调幅信号的搜索和解调",
+      "设计并实现了基于MCU的自动信号搜索方案和调制识别方案，实现单频载波、调频（FM）和调幅（AM）信号的检测与识别",
+      "通过元件选型、电路设计优化及软件优化等手段联合优化系统功耗，保证系统满足在单5V供电下电流≤500mA的约束",
+    ],
+    icon: "material-symbols:database",
+    color: "#4fea0c",
+  },
+  {
+    id: "smart desktop robot",
+    title: "智能交互桌面机器人系统",
+    description:
+      "本项目旨在设计并制作一款集语音交互、听声辨位、触屏操作、肢体动作及无线控制于一体的多功能桌面机器人。系统通过多传感器融合与嵌入式处理，为用户提供自然、生动、智能的人机交互体验.",
+    type: "project",
+    startDate: "2025-04-11",
+    endDate: "2025-07-22",
+    skills: ["stm32", "立创EDA", "摄像头", "触控屏幕"],
+    achievements: [
+      "设计系统硬件架构，基于多MCU协同满足复杂任务场景需求，通过SPI、UART等总线设计了高效可靠的MCU间通信协议",
+      "完成系统主控板及驱动板的原理图和PCB设计，重点优化PCB布局布线，满足系统性能需求同时实现小型化与高集成度",
+      "优化数模混合电路的布线，重点关注麦克风采集电路，保证音频信号质量，保证语音交互和听声辨位功能的稳定",
+    ],
+    icon: "material-symbols:database",
+    color: "#0ceaa4",
+  },
+
   /*	{
 		id: "current-study",
 		title: "Studying Computer Science and Technology",

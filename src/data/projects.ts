@@ -21,13 +21,13 @@ export interface Project {
 
 export const projectsData: Project[] = [
   {
-    id: "1",
+    id: "wireless signal simulator",
     title: "高精度无线传输信号模拟系统",
     description:
       "该系统用于模拟产生无线通信中的直达信号(SD)和多径信号(SM)，并合路输出模拟的无线传输信号(SOut)。同时实现了对载波频率(fc)、信号调制(CW/AM)、多径时延、幅度衰减(α)和相对初相(φ)等关键信道参数的高精度可调。",
     image: "/assets/projects/1.webp",
     category: "contest",
-    techStack: ["stm32", "jlc-eeda", "c"],
+    techStack: ["stm32", "立创EDA", "DDS", "AM/FM"],
     status: "completed",
     startDate: "2024-07-29",
     endDate: "2024-08-01",
@@ -37,13 +37,13 @@ export const projectsData: Project[] = [
   },
 
   {
-    id: "2",
+    id: "rf signal receiver",
     title: "宽带射频信号自动接收与调制识别系统",
     description:
       "基于超外差接收机原理，针对88MHz至108MHz调频/调幅小信号，设计并制作了一台低功耗、高速度的通信接收机。该系统集成了低噪声放大器、混频器、滤波器和解调模块、功率放大器，实现了对未知信号的自动搜索、识别、解调和带载输出。",
     image: "/assets/projects/2.webp",
     category: "contest",
-    techStack: ["stm32", "jlc-eeda", "c"],
+    techStack: ["stm32", "立创EDA", "AM/FM", "LNA"],
     status: "completed",
     startDate: "2025-07-30",
     endDate: "2025-08-02",
@@ -53,16 +53,16 @@ export const projectsData: Project[] = [
   },
 
   {
-    id: "3",
+    id: "smart desktop robot",
     title: "智能交互桌面机器人系统",
     description:
       "本项目旨在设计并制作一款集语音交互、听声辨位、触屏操作、肢体动作及无线控制于一体的多功能桌面机器人。系统通过多传感器融合与嵌入式处理，为用户提供自然、生动、智能的人机交互体验。",
     image: "/assets/projects/3.webp",
     category: "contest",
-    techStack: ["stm32", "jlc-eeda", "python", "c"],
+    techStack: ["stm32", "立创EDA", "摄像头", "触控屏幕"],
     status: "completed",
     startDate: "2025-04-11",
-    endDate: "2024-07-22",
+    endDate: "2025-07-22",
     featured: false,
     // tags: ["Hardware", "IoT", "Embedded"],
     showImage: true,
