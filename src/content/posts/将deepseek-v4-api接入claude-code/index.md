@@ -26,7 +26,7 @@ draft: false
 ```bash
 node --version
 npm --version
-git --vrsion
+git --version
 ```
 
 然后用下面的命令安装Claude Code CLI：
