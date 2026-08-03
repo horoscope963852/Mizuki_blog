@@ -22,6 +22,13 @@ const diaryData: DiaryItem[] = [
 	},*/
 
   {
+    id: 10,
+    content: "老实赚钱很枯燥吧？",
+    date: "2026-08-03T15:31:00Z",
+    images: ["/images/diary/260803.jpg"],
+  },
+
+  {
     id: 9,
     content: "台风天，不出门，吃炸鸡，打游戏，泡脚睡觉 :D",
     date: "2026-07-26T09:09:00Z",
