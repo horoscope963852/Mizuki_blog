@@ -22,6 +22,13 @@ const diaryData: DiaryItem[] = [
 	},*/
 
   {
+    id: 11,
+    content: "甲流阳了，已老实😭这两天已经好多了，前两天烧得几乎下不了床。",
+    date: "2026-08-15T18:16:00Z",
+    images: ["/images/diary/260816_1.jpg", "/images/diary/260816_2.jpg"],
+  },
+
+  {
     id: 10,
     content: "老实赚钱很枯燥吧？",
     date: "2026-08-03T15:31:00Z",

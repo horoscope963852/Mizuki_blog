@@ -36,6 +36,8 @@ export const timelineData: TimelineItem[] = [
       "参与灵犀 X2摄像头 GMSL 链路的测试",
       "参与灵犀 X3麦克风电路的设计与验证",
       "参与灵犀 X3运动控制电路的测试与验证",
+      "熟悉硬件研发流程，推进与软件、结构、采购、供应商多方的沟通和协作，跟进项目进展",
+      "了解企业信息安全规范，在研发过程中避免信息泄密",
     ],
     icon: "material-symbols:work",
     color: "#63A0C9",
