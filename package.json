@@ -35,7 +35,6 @@
     "@expressive-code/plugin-line-numbers": "^0.44.0",
     "@fancyapps/ui": "^6.1.14",
     "@iconify/svelte": "^5.2.2",
-    "@pagefind/linux-x64": "1.5.2",
     "@swup/astro": "^1.8.0",
     "@tailwindcss/typography": "^0.5.20",
     "@tailwindcss/vite": "^4.3.2",
