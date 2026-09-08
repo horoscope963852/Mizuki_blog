@@ -22,6 +22,24 @@ const diaryData: DiaryItem[] = [
 	},*/
 
   {
+    id: 14,
+    content: "我会发着呆，然后忘记你，接着紧紧闭上眼",
+    date: "2026-09-08T12:28:00Z",
+    images: ["/images/diary/20260908.jpg"],
+  },
+
+  {
+    id: 13,
+    content: "沉默着走了有 多遥远",
+    date: "2026-08-28T19:02:00Z",
+    images: [
+      "/images/diary/20260828_1.jpg",
+      "/images/diary/20260828_2.jpg",
+      "/images/diary/20260828_3.jpg",
+    ],
+  },
+
+  {
     id: 12,
     content: "莫叹去日不可追，来日犹可为。",
     date: "2026-08-18T12:51:00Z",
